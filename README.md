@@ -1,4 +1,4 @@
-# Nano React App
+# Nano React App 🔍
 
 [Create-React-App](https://github.com/facebook/create-react-app) is way too bloated, use `nano-react-app` for a truly minimal React app.
 
