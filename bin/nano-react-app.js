@@ -30,8 +30,8 @@ const main = async () => {
       ? path.basename(projectPath)
       : path.basename(projectLocation);
 
-  console.log(chalk.cyanBright("Project path: ") + projectPath);
-  console.log(chalk.cyanBright("Project name: ") + projectName);
+  console.log(chalk.cyan("Project path: ") + projectPath);
+  console.log(chalk.cyan("Project name: ") + projectName);
   console.log();
 
   // create folder if it does not exist
@@ -39,7 +39,7 @@ const main = async () => {
   if (!folderExists) {
     console.log("Creating directory...");
     fs.mkdirSync(projectPath, { recursive: true });
-    console.log(chalk.cyanBright("Directory created."));
+    console.log(chalk.cyan("Directory created."));
     console.log();
   }
 
@@ -66,18 +66,22 @@ const main = async () => {
   // delete unnecessary files
   await deleteFile(path.join(projectPath, "LICENSE"));
   await deleteFile(path.join(projectPath, "package-lock.json"));
-  console.log(chalk.cyanBright("Project downloaded."));
+  console.log(chalk.cyan("Project downloaded."));
   console.log();
 
   // notify user that the app is ready
   console.log(chalk.bgMagenta(chalk.cyanBright("  YOUR APP IS READY!  ")));
   console.log();
   console.log(
-    `1) Install your dependencies with ${chalk.cyanBright("npm install")}`,
+    `1) Install your dependencies with ${chalk.cyan(
+      "npm install",
+    )} or ${chalk.cyan("yarn")}`,
   );
   console.log();
   console.log(
-    `2) Start developing your app with ${chalk.cyanBright("npm start")}`,
+    `2) Start developing your app with ${chalk.cyan(
+      "npm start",
+    )} or ${chalk.cyan("yarn start")}`,
   );
   console.log();
   console.log(chalk.yellow("Enjoy!"));
