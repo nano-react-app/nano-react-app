@@ -4,7 +4,7 @@
 
 Take a look at the app template [here](https://github.com/adrianmcli/nano-react-app-template), some features:
 
-- Uses Parcel with **zero-config**
+- Uses Parcel with **zero-config** instead of Webpack
 - **No eject**, because it is already so minimal
 - **No linting**
 - **No babel config**
