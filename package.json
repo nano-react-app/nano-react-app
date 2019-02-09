@@ -1,0 +1,23 @@
+{
+  "name": "nano-react-app",
+  "version": "1.0.0",
+  "description": "Hard to get more minimal than this React app.",
+  "bin": "./bin/nano-react-app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adrianmcli/nano-react-app.git"
+  },
+  "keywords": [
+    "react",
+    "parcel"
+  ],
+  "author": "Adrian Li",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adrianmcli/nano-react-app/issues"
+  },
+  "homepage": "https://github.com/adrianmcli/nano-react-app#readme"
+}
