@@ -9,6 +9,7 @@ Take a look at the app template [here](https://github.com/adrianmcli/nano-react-
 - **No linting**
 - **No babel config**
 - **No service worker**
+- `npm start` and `npm run build` scripts for dev server and production build
 
 Try now by running this in the terminal:
 
