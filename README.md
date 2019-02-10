@@ -17,7 +17,6 @@ Take a look at the app template [here](https://github.com/adrianmcli/nano-react-
 - Uses Parcel with **zero-config** instead of Webpack
 - **No eject**, because it is already so minimal
 - **No linting**
-- **No babel config**
 - **No service worker**
 - `npm start` and `npm run build` scripts for dev server and production build
 
