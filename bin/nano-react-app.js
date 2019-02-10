@@ -19,7 +19,12 @@ ${chalk.bgMagenta(chalk.cyanBright("  NANO REACT APP  "))}
 const main = async () => {
   // check that there is a project location provided
   if (!projectLocation) {
-    console.log(chalk.red("Please specify a project location"));
+    console.log(`  Please specify a project directory:
+    ${chalk.cyan("nano-react-app")} ${chalk.green("<project-directory>")}
+
+  For example:
+    ${chalk.cyan("nano-react-app")} ${chalk.green("my-react-app")}
+    `);
     return;
   }
 
