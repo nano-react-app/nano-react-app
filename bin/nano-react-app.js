@@ -12,9 +12,9 @@ const deleteFile = util.promisify(fs.unlink);
 const args = process.argv.slice(2);
 let projectLocation = args[0] && args[0].trim();
 
-console.log();
-console.log(chalk.bgMagenta(chalk.cyanBright("  NANO REACT APP  ")));
-console.log();
+console.log(`
+${chalk.bgMagenta(chalk.cyanBright("  NANO REACT APP  "))}
+`);
 
 const main = async () => {
   // check that there is a project location provided
@@ -30,22 +30,22 @@ const main = async () => {
       ? path.basename(projectPath)
       : path.basename(projectLocation);
 
-  console.log(chalk.cyan("Project path: ") + projectPath);
-  console.log(chalk.cyan("Project name: ") + projectName);
-  console.log();
+  console.log(`  ${chalk.cyan("Project path: ") + projectPath}
+  ${chalk.cyan("Project name: ") + projectName}
+  `);
 
   // create folder if it does not exist
   const folderExists = fs.existsSync(projectPath);
   if (!folderExists) {
-    console.log("Creating directory...");
+    process.stdout.write("  Creating directory...");
     fs.mkdirSync(projectPath, { recursive: true });
-    console.log(chalk.cyan("Directory created."));
-    console.log();
+    process.stdout.write(chalk.green(" DONE\n"));
   }
 
   // download template project from github
-  console.log("Downloading template project...");
+  process.stdout.write("  Downloading template project...");
   await githubDownload("adrianmcli/nano-react-app-template", projectPath);
+  process.stdout.write(chalk.green(" DONE\n\n"));
 
   // change package.json project name
   const pkgJsonPath = path.join(projectPath, "package.json");
@@ -66,26 +66,23 @@ const main = async () => {
   // delete unnecessary files
   await deleteFile(path.join(projectPath, "LICENSE"));
   await deleteFile(path.join(projectPath, "package-lock.json"));
-  console.log(chalk.cyan("Project downloaded."));
-  console.log();
 
   // notify user that the app is ready
-  console.log(chalk.bgMagenta(chalk.cyanBright("  YOUR APP IS READY!  ")));
-  console.log();
-  console.log(
-    `1) Install your dependencies with ${chalk.cyan(
-      "npm install",
-    )} or ${chalk.cyan("yarn")}`,
-  );
-  console.log();
-  console.log(
-    `2) Start developing your app with ${chalk.cyan(
-      "npm start",
-    )} or ${chalk.cyan("yarn start")}`,
-  );
-  console.log();
-  console.log(chalk.yellow("Enjoy!"));
-  console.log();
+  console.log(`${chalk.bgMagenta(chalk.cyanBright("  SUCCESS!  "))}
+
+  Created project ${chalk.magenta(projectName)} at ${chalk.magenta(projectPath)}
+  Navigate to that directory and run the following commands:
+
+    1. ${chalk.cyan("npm install")} or ${chalk.cyan(
+    "yarn",
+  )} to install dependencies
+
+    2. ${chalk.cyan("npm start")} or ${chalk.cyan(
+    "yarn start",
+  )} to start developing
+
+  ${chalk.yellow("Enjoy!")}
+`);
 };
 
 main();
