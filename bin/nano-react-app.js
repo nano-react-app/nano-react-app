@@ -10,7 +10,7 @@ const deleteFile = util.promisify(fs.unlink);
 
 // grab arguments
 const args = process.argv.slice(2);
-let projectLocation = args[0] && args[0].trim();
+const projectLocation = args[0] && args[0].trim();
 
 console.log(`
 ${chalk.bgMagenta(chalk.cyanBright("  NANO REACT APP  "))}
