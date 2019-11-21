@@ -70,7 +70,6 @@ const main = async () => {
 
   // delete unnecessary files
   await deleteFile(path.join(projectPath, "LICENSE"));
-  await deleteFile(path.join(projectPath, "package-lock.json"));
 
   // notify user that the app is ready
   console.log(`${chalk.bgMagenta(chalk.cyanBright("  SUCCESS!  "))}
