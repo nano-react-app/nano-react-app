@@ -70,7 +70,7 @@ const main = async () => {
 
   // delete unnecessary files
   await deleteFile(path.join(projectPath, "LICENSE"));
-  await deleteFile(path.join(projectPath, "package-lock.json"));
+  try { await deleteFile(path.join(projectPath, "package-lock.json")); } catch(e) { if (e.code != "ENOENT") throw e; }
 
   // notify user that the app is ready
   console.log(`${chalk.bgMagenta(chalk.cyanBright("  SUCCESS!  "))}
