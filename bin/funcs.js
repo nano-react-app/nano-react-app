@@ -55,7 +55,6 @@ exports.updateProjectFiles = async (projectPath, projectName) => {
 
     // delete unnecessary files
     await deleteFile(path.join(projectPath, "LICENSE"));
-    //await deleteFile(path.join(projectPath, "package-lock.json"));
 }
 
 exports.notifyUser = async (projectPath, projectName) => {
