@@ -6,10 +6,8 @@ const main = async () => {
 
     console.log(`${chalk.bgMagenta(chalk.cyanBright("  NANO REACT APP  "))}`);
 
-    // grab arguments
     const arg = process.argv.slice(2)[0];
     const projectLocation = arg && arg.trim();
-
     await funcs.validateParams(projectLocation);
     const { projectPath, projectName } = await funcs.processParams(projectLocation);
     const templateLocation = "adrianmcli/nano-react-app-template";
