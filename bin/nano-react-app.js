@@ -2,15 +2,20 @@
 const chalk = require("chalk");
 const funcs = require('./funcs');
 
+const jsxPath = 'adrianmcli/nano-react-app-template';
+const tsxPath = 'adrianmcli/nano-react-app-typescript-template';
+
 const main = async () => {
 
     console.log(`${chalk.bgMagenta(chalk.cyanBright("  NANO REACT APP  "))}`);
 
-    const arg = process.argv.slice(2)[0];
-    const projectLocation = arg && arg.trim();
+    const args = require('yargs').argv;
+    const projectLocation = args._[0];
+    const projectType = args.tsx? 'tsx': 'jsx';
+
     await funcs.validateParams(projectLocation);
     const { projectPath, projectName } = await funcs.processParams(projectLocation);
-    const templateLocation = "adrianmcli/nano-react-app-template";
+    const templateLocation = projectType === 'tsx'? tsxPath: jsxPath;
 
     await funcs.createFolder(projectPath);
     await funcs.downloadTemplate(templateLocation, projectPath);

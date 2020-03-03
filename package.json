@@ -22,6 +22,7 @@
   "homepage": "https://github.com/adrianmcli/nano-react-app#readme",
   "dependencies": {
     "chalk": "^2.4.2",
-    "download-git-repo": "^1.1.0"
+    "download-git-repo": "^1.1.0",
+    "yargs": "^15.1.0"
   }
 }
