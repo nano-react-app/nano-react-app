@@ -1,6 +1,6 @@
 {
   "name": "nano-react-app",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "description": "Hard to get more minimal than this React app.",
   "bin": "./bin/nano-react-app.js",
   "scripts": {

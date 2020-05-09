@@ -2,8 +2,8 @@
 const chalk = require("chalk");
 const funcs = require('./funcs');
 
-const jsxPath = 'adrianmcli/nano-react-app-template';
-const tsxPath = 'adrianmcli/nano-react-app-typescript-template';
+const jsxPath = 'nano-react-app/template-js';
+const tsxPath = 'nano-react-app/template-ts';
 
 const main = async () => {
 
