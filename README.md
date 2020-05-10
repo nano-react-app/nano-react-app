@@ -13,7 +13,7 @@
 
 ---
 
-[Create-React-App](https://github.com/facebook/create-react-app) is way too [bloated](https://medium.com/hackernoon/create-react-app-is-way-too-bloated-5db07c3511), use `nano-react-app` for a truly minimal React app.
+[Create-React-App](https://github.com/facebook/create-react-app) can be a little [bloated](https://medium.com/hackernoon/create-react-app-is-way-too-bloated-5db07c3511), use `nano-react-app` for a truly minimal React app.
 
 These are all the files that are generated:
 
