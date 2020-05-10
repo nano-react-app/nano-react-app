@@ -31,8 +31,8 @@ If you like Typescript, run the following:
 npx nano-react-app my-app --ts
 ```
 
-Default JS template: https://github.com/nano-react-app/template-js
-Typescript template: https://github.com/nano-react-app/template-ts
+- Default JS template: https://github.com/nano-react-app/template-js
+- Typescript template: https://github.com/nano-react-app/template-ts
 
 ## Features
 
