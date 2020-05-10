@@ -17,7 +17,7 @@
 
 These are all the files that are generated:
 
-![file structure](./static/files.png)
+<img alt="file structure" src="./static/files.png" width="128">
 
 Try now by running this in the terminal:
 
