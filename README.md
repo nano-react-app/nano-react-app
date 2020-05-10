@@ -1,5 +1,5 @@
 <p align="center">
-  <img alt="nano logo" src="./static/logo.png" width="240">
+  <img alt="nano logo" src="./static/logo.png" width="64">
 </p>
 <p align="center">
   🔍 A truly minimal replacement for Create-React-App.
@@ -23,16 +23,16 @@ Try now by running this in the terminal:
 npx nano-react-app my-app
 ```
 
-Take a look at the app template [here](https://github.com/adrianmcli/nano-react-app-template)
+Take a look at the default app template [here](https://github.com/nano-react-app/template-js)
 
 ## Features
 
-- Uses Parcel with **zero-config** instead of Webpack
-- **No eject**, because it is already so minimal
-- **No linting**
-- **No service worker**
-- `npm start` and `npm run build` scripts for dev server and production build
+- 📦 Uses Parcel with **zero-config** instead of Webpack
+- 🚫 **No eject**, because it is already so minimal
+- 🚫 **No linting**
+- 🚫 **No service worker**
+- ⚡ `npm start` and `npm run build` scripts for dev server and production build
 
 ## Usage
 
-For App configuration and usage info, see the template's [README](https://github.com/adrianmcli/nano-react-app-template/blob/master/README.md).
+For App configuration and usage info, see the template's [README](https://github.com/nano-react-app/template-js).
