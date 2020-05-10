@@ -1,4 +1,17 @@
-# Nano React App 🔍
+<p align="center">
+  <img alt="nano logo" src="./static/logo.png" width="240">
+</p>
+<p align="center">
+  🔍 A truly minimal replacement for Create-React-App.
+</p>
+
+<p align="center">
+  <img alt="npm version" src="https://badgen.net/npm/v/nano-react-app">
+  <img alt="npm downloads" src="https://badgen.net/npm/dt/nano-react-app">
+  <img alt="mit license" src="https://badgen.net/npm/license/nano-react-app">
+</p>
+
+---
 
 [Create-React-App](https://github.com/facebook/create-react-app) is way too bloated, use `nano-react-app` for a truly minimal React app.
 
