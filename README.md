@@ -13,7 +13,7 @@
 
 ---
 
-[Create-React-App](https://github.com/facebook/create-react-app) is way too bloated, use `nano-react-app` for a truly minimal React app.
+[Create-React-App](https://github.com/facebook/create-react-app) is way too bloated, use `nano-react-app` for a truly minimal React app. These are all the files that are generated:
 
 ![file structure](./static/files.png)
 
