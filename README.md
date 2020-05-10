@@ -25,7 +25,14 @@ Try now by running this in the terminal:
 npx nano-react-app my-app
 ```
 
-Take a look at the default app template [here](https://github.com/nano-react-app/template-js)
+If you like Typescript, run the following:
+
+```
+npx nano-react-app my-app --ts
+```
+
+Default JS template: https://github.com/nano-react-app/template-js
+Typescript template: https://github.com/nano-react-app/template-ts
 
 ## Features
 
