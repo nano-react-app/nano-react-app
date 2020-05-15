@@ -44,4 +44,4 @@ npx nano-react-app my-app --ts
 
 ## Usage
 
-For App configuration and usage info, see the template's [README](https://github.com/nano-react-app/template-js).
+For App configuration and usage info, see the respective template's README.
