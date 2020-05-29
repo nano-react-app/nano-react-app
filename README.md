@@ -13,21 +13,11 @@
 
 ---
 
-```
-███    ██  █████  ███    ██  ██████  
-████   ██ ██   ██ ████   ██ ██    ██ 
-██ ██  ██ ███████ ██ ██  ██ ██    ██ 
-██  ██ ██ ██   ██ ██  ██ ██ ██    ██ 
-██   ████ ██   ██ ██   ████  ██████  
-```
-
-[Create-React-App](https://github.com/facebook/create-react-app) generates a [lot](https://medium.com/hackernoon/create-react-app-is-way-too-bloated-5db07c3511) of files you may not need.
-
-Use `nano-react-app` for a truly minimal React app.
+Use `nano-react-app` for a truly minimal React app:
 
 <img alt="file structure" src="./static/files.png" width="128">
 
-_**Only 6 files to rule them all**_
+_**A full React project in only 6 files**_
 
 ## Install
 
