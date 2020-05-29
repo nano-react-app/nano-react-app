@@ -13,19 +13,31 @@
 
 ---
 
-[Create-React-App](https://github.com/facebook/create-react-app) can be a little [bloated](https://medium.com/hackernoon/create-react-app-is-way-too-bloated-5db07c3511), use `nano-react-app` for a truly minimal React app.
+```
+███    ██  █████  ███    ██  ██████  
+████   ██ ██   ██ ████   ██ ██    ██ 
+██ ██  ██ ███████ ██ ██  ██ ██    ██ 
+██  ██ ██ ██   ██ ██  ██ ██ ██    ██ 
+██   ████ ██   ██ ██   ████  ██████  
+```
 
-These are all the files that are generated:
+[Create-React-App](https://github.com/facebook/create-react-app) generates a [lot](https://medium.com/hackernoon/create-react-app-is-way-too-bloated-5db07c3511) of files you may not need.
+
+Use `nano-react-app` for a truly minimal React app.
 
 <img alt="file structure" src="./static/files.png" width="128">
 
-Try now by running this in the terminal:
+_**Only 6 files to rule them all**_
+
+## Install
+
+Try now with:
 
 ```
 npx nano-react-app my-app
 ```
 
-If you like Typescript, run the following:
+For Typescript, run this:
 
 ```
 npx nano-react-app my-app --ts
