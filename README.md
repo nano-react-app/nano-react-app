@@ -38,7 +38,7 @@ npx nano-react-app my-app --ts
 
 ## Features
 
-- 📦 Uses Parcel with **zero-config** instead of Webpack
+- 📦 Uses Vite with **zero-config** instead of Webpack
 - 🚫 **No eject**, because it is already so minimal
 - 🚫 **No linting**
 - 🚫 **No service worker**
